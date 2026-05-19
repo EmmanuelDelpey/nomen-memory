@@ -1,0 +1,109 @@
+{
+  "version": "1.0.0",
+  "encoding": "cortex-spatial-relational",
+  "format": "[zone][type][coords][hash]",
+  "length": 8,
+  
+  "zones": {
+    "e": {
+      "name": "edges",
+      "description": "Périphérie - détection signaux externes",
+      "function": "Interface monde → cortex",
+      "plasticity": "HIGH"
+    },
+    "c": {
+      "name": "core",
+      "description": "Noyau - intégration centrale",
+      "function": "Synthèse multi-sources",
+      "plasticity": "MEDIUM"
+    },
+    "m": {
+      "name": "memory",
+      "description": "Mémoire - consolidation long-terme",
+      "function": "Stabilisation patterns",
+      "plasticity": "LOW"
+    },
+    "a": {
+      "name": "analysis",
+      "description": "Analyse - décomposition structurelle",
+      "function": "Patterns → composants",
+      "plasticity": "MEDIUM"
+    },
+    "r": {
+      "name": "reasoning",
+      "description": "Raisonnement - inférence causale",
+      "function": "Composants → conclusions",
+      "plasticity": "HIGH"
+    }
+  },
+  
+  "types": {
+    "a": "analytical",
+    "c": "creative",
+    "m": "memory",
+    "p": "process",
+    "d": "detection",
+    "t": "transformation",
+    "i": "integration"
+  },
+  
+  "coordinates": {
+    "base": 36,
+    "range": "00-zz",
+    "space": "2D projection cortex surface",
+    "interpretation": "position relative dans zone",
+    "example": "35 = position spatiale dans zone"
+  },
+  
+  "hash": {
+    "length": 4,
+    "charset": "a-z0-9",
+    "function": "encode relations primaires",
+    "collision_space": 1679616,
+    "algorithm": "simple_hash(sorted_relations)"
+  },
+  
+  "examples": {
+    "ea35yuee": {
+      "zone": "edges (périphérie)",
+      "type": "analytical",
+      "coords": "35 (position spatiale)",
+      "hash": "yuee (relations encodées)",
+      "interpretation": "Nœud analytique en périphérie, position 35, relations vers yuee"
+    },
+    "ca12xyzz": {
+      "zone": "core (central)",
+      "type": "analytical", 
+      "coords": "12",
+      "hash": "xyzz",
+      "interpretation": "Nœud analytique central, position 12"
+    },
+    "md00abcd": {
+      "zone": "memory",
+      "type": "detection",
+      "coords": "00 (origine)",
+      "hash": "abcd",
+      "interpretation": "Détecteur mémoire, position origine"
+    }
+  },
+  
+  "plasticity_rules": {
+    "renaming_triggers": [
+      "usage_frequency_change",
+      "relations_shift",
+      "zone_migration"
+    ],
+    "zone_migration": {
+      "edges → core": "pattern detection → intégration",
+      "core → memory": "usage répété → consolidation",
+      "analysis → reasoning": "décomposition → synthèse"
+    }
+  },
+  
+  "node_structure": {
+    "minimal": true,
+    "content": "relations + transformations simples",
+    "no_complex_logic": true,
+    "emergence_by_composition": true
+  }
+}

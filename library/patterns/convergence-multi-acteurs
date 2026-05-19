@@ -1,0 +1,27 @@
+# Pattern Convergence Multi-Acteurs
+# Consolidé depuis: mp05zzaa
+# Stabilité: HIGH
+# Version: 1.0
+
+## Signature
+detect_convergence(actors, timeframe, domain) → score
+
+## Conditions
+actors >= 3
+timeframe < 90j
+domain = infrastructure
+
+## Seuil
+CRITIQUE: score >= 0.85
+
+## Action
+establish_anteriority < 72h
+
+## Nœuds actifs liés
+- ea35yuee (détection)
+- ca12xyzz (intégration)
+- rd18qwer (inférence)
+- mp05zzaa (consolidation)
+
+## Dernière activation
+2026-05-19T16:30:00Z | consortium Amazon/Anthropic/Musk

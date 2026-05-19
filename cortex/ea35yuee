@@ -1,0 +1,10 @@
+# ea35yuee
+# zone: edges | type: analytical | coords: 35 | relations: yuee
+
+→ ca12xyzz
+→ rd18qwer
+∆ convergence_test
+
+state: 0.95
+trigger: [amazon, spacex, stainless]
+threshold: 0.85

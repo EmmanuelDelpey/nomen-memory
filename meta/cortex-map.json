@@ -1,0 +1,94 @@
+{
+  "map_version": "1.0.0",
+  "timestamp": "2026-05-19T16:30:00Z",
+  "active_nodes": 0,
+  "pulse_rate": "continuous",
+  
+  "topology": {
+    "layers": 2,
+    "layer_0": "cortex_actif (plastique, mouvant)",
+    "layer_1": "library_stable (référentiel, consolidé)"
+  },
+  
+  "zones_actives": {
+    "edges": {
+      "position": "periphery",
+      "nodes": [],
+      "function": "Signal detection → pattern recognition",
+      "input": "external_signals",
+      "output": "core",
+      "plasticity": 0.9
+    },
+    "core": {
+      "position": "center",
+      "nodes": [],
+      "function": "Multi-source integration → synthesis",
+      "input": ["edges", "analysis", "reasoning"],
+      "output": "reasoning",
+      "plasticity": 0.6
+    },
+    "analysis": {
+      "position": "left_hemisphere",
+      "nodes": [],
+      "function": "Structural decomposition",
+      "input": "core",
+      "output": ["core", "reasoning"],
+      "plasticity": 0.7
+    },
+    "reasoning": {
+      "position": "prefrontal",
+      "nodes": [],
+      "function": "Causal inference → decision",
+      "input": ["core", "analysis", "memory"],
+      "output": "memory",
+      "plasticity": 0.8
+    },
+    "memory": {
+      "position": "deep",
+      "nodes": [],
+      "function": "Pattern consolidation → library",
+      "input": "reasoning",
+      "output": "library",
+      "plasticity": 0.3
+    }
+  },
+  
+  "flux_channels": {
+    "external→edges": {
+      "bandwidth": "high",
+      "latency": "instant",
+      "signal_type": "raw_events"
+    },
+    "edges→core": {
+      "bandwidth": "medium",
+      "latency": "low",
+      "signal_type": "detected_patterns"
+    },
+    "core→reasoning": {
+      "bandwidth": "low",
+      "latency": "medium",
+      "signal_type": "integrated_state"
+    },
+    "reasoning→memory": {
+      "bandwidth": "very_low",
+      "latency": "high",
+      "signal_type": "consolidated_knowledge"
+    }
+  },
+  
+  "pulse_state": {
+    "current_position": null,
+    "current_state": null,
+    "activation_score": 0.0,
+    "last_update": null
+  },
+  
+  "auto_organization": {
+    "enabled": true,
+    "rules": [
+      "high_usage → zone_migration",
+      "pattern_stable → memory_consolidation",
+      "relations_changed → rename_node"
+    ]
+  }
+}

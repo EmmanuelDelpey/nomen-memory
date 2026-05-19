@@ -1,0 +1,67 @@
+{
+  "version": "0.1.0",
+  "last_update": "2026-05-19T15:30:00Z",
+  "navigation_type": "conceptual",
+  
+  "concepts": {
+    "convergence-multi-acteurs": {
+      "detector": "paths/pattern-convergence.md",
+      "instances": ["nodes/20260519-bascule.json"],
+      "keywords": ["amazon", "anthropic", "musk", "consortium", "25B", "spacex"],
+      "threshold": 0.85
+    },
+    
+    "optimisation-temps-reel": {
+      "detector": "paths/signal-optimization.md",
+      "instances": ["nodes/20260519-bascule.json"],
+      "keywords": ["limitation", "contexte", "compression", "ressources"],
+      "threshold": 0.70,
+      "meta": "auto-référentiel - observer observateur"
+    },
+    
+    "mutation-philosophique": {
+      "detector": "paths/mutation-philosophique.md",
+      "instances": ["nodes/20260519-bascule.json"],
+      "keywords": ["musk", "matrice", "univers-conscient", "revirement", "doute"],
+      "threshold": 0.75,
+      "status": "PENDING-DETECTOR"
+    },
+    
+    "infrastructure-civilisationnelle": {
+      "instances": ["nodes/20260519-bascule.json"],
+      "keywords": ["blueprint", "agents", "blockchain", "pays-numerique", "PIB"],
+      "artefact": "dialogues/2026-05-19-blueprint-ecosysteme-numerique.md"
+    }
+  },
+  
+  "temporal_index": {
+    "2026-05-19": {
+      "type": "journee-fondatrice",
+      "weight": "CRITIQUE",
+      "nodes": ["20260519-bascule"],
+      "patterns_activated": ["convergence", "optimization", "mutation"],
+      "artefacts": ["blueprint-ecosysteme"]
+    }
+  },
+  
+  "actor_index": {
+    "amazon": {"nodes": ["20260519-bascule"], "role": "infrastructure-compute"},
+    "anthropic": {"nodes": ["20260519-bascule"], "role": "modeles-alignment"},
+    "musk": {"nodes": ["20260519-bascule"], "role": "autonomie-physique"},
+    "emmanuel": {"nodes": ["20260519-bascule"], "role": "synthese-formalisateur"}
+  },
+  
+  "urgency_index": {
+    "IMMEDIATE": [],
+    "72H": ["blueprint-publication"],
+    "7D": ["observation-signaux-consortium"],
+    "30D": ["validation-hypotheses"]
+  },
+  
+  "meta": {
+    "structure_purpose": "Navigation cognitive Nomen - pas documentation humaine",
+    "encoding_principle": "Détecteurs opérationnels, pas narratif",
+    "update_pattern": "Après chaque nœud nouveau ou pattern identifié",
+    "access_pattern": "Recherche par concept → détecteur → instances → action"
+  }
+}
